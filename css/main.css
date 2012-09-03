@@ -1,0 +1,64 @@
+BODY {
+  background: url(../images/main_bg.jpg) no-repeat 50% 0 #000101;
+}
+
+.png {
+  behavior: url("js/iepngfix.htc")
+}
+
+.clear {
+  clear: both;
+}
+
+A:hover {
+  text-decoration: underline;
+}
+
+#wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+#top_block {
+  height: 80px;
+  margin: 8px 0 0 0;
+  background: #EAEAEA;
+  overflow: hidden;
+}
+
+#header {
+  height: 173px;
+  margin: 17px 0 0 0;
+  background: #EAEAEA;
+  overflow: hidden;
+}
+
+#filter_slider {
+  height: 396px;
+  margin: 13px 0 0 0;
+  background: #EAEAEA;
+  overflow: hidden;
+}
+
+#actions {
+  height: 300px;
+  margin: 21px 0 0 0;
+  background: #EAEAEA;
+  overflow: hidden;
+}
+
+#articles {
+  height: 759px;
+  margin: 24px 0 0 0;
+  background: #EAEAEA;
+  overflow: hidden;
+}
+
+#footer {
+  height: 313px;
+  margin: 20px 0 0 0;
+  background: #EAEAEA;
+  overflow: hidden;
+}
