@@ -6,9 +6,11 @@
   
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript" src="js/jquery.bxSlider.min.js"></script>
   
   <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="css/bx_styles.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
 	<div id="wrapper">
@@ -21,7 +23,57 @@
     </div>
     
     <div id="filter_slider">
-      
+      <div class="block_left_bg"></div>
+			<div class="block_right_bg"></div>
+			<div class="block_bg">
+			  <div class="baterfly">
+					<div class="filter_left_col">
+					  <div class="catalog_head">Каталог</div>
+						<ul>
+						  <li><a class="catalog_link" href="#">Свадебные платья</a></li>
+							<li><a class="catalog_link" href="#">Вечерние платья</a></li>
+							<li><a class="catalog_link" href="#">Нижнее бельё</a></li>
+							<li><a class="catalog_link" href="#">Аксессуары</a></li>
+						</ul>
+					</div>
+					<div class="filter_right_col">
+					  <span>Подбор товара</span>
+						<form action="#">
+						  <div>
+							  <select name="#">
+								  <option>Категория 1</option>
+									<option>Категория 2</option>
+									<option>Категория 3</option>
+								</select>
+								<select name="#">
+								  <option>Тип 1</option>
+									<option>Тип 2</option>
+									<option>Тип 3</option>
+								</select><br />
+								<div class="cost">Цена: <br />
+								  от <input type="text" placeholder="0" name="#" /> 
+								  до <input type="text" placeholder="30 000" name="#" />
+								</div>
+								<div class="trackbar"></div>
+								<input class="but" type="submit" value="показать" name="#" />
+								<div class="indent">соответствует </div>
+								<div class="result">1000000000000000<div class="count"></div></div>
+							</div>
+						</form>
+					</div>
+					<div class="filter_cont_col">
+					  <div class="slide">
+						  <a class="prev" href="#"></a>
+							<a class="next" href="#"></a>
+							<ul>
+								<li><a href="#"><img src="tmp/slider_img-1.jpg" alt="" title="" /></a></li>
+								<li><a href="#"><img src="tmp/slider_img-2.jpg" alt="" title="" /></a></li>
+								<li><a href="#"><img src="tmp/slider_img-3.jpg" alt="" title="" /></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
     </div>
     
     <div id="actions">

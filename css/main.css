@@ -38,8 +38,177 @@ A:hover {
 #filter_slider {
   height: 396px;
   margin: 13px 0 0 0;
-  background: #EAEAEA;
+  background: ;
   overflow: hidden;
+}
+#filter_slider .block_left_bg {
+  float: left;
+	width: 21px;
+	height: 396px;
+  background: url(../images/catalog_left_bg.png) no-repeat 0 0;
+}
+#filter_slider .block_right_bg {
+  float: right;
+	width: 21px;
+	height: 396px;
+  background: url(../images/catalog_right_bg.png) no-repeat 0 0;
+}
+#filter_slider .block_bg {
+  margin: 0px 21px 0 21px;
+	height: 396px;
+  background: url(../images/catalog_bg.png) repeat-x 0 0;
+}
+#filter_slider .block_bg .baterfly {
+  width: 1158px;
+	height: 396px;
+	padding: 20px 0 0 0;
+  background: url(../images/catalog_baterfly.png) no-repeat 100% 10px;
+}
+
+#filter_slider .block_bg .baterfly .filter_left_col {
+  float: left;
+	width: 280px;
+	height: 300px;
+	background: ;
+}
+#filter_slider .block_bg .baterfly .filter_left_col .catalog_head {
+  font: italic 29px/44px "Times New Roman";
+	color: #0F1D44;
+	text-align: center;
+	text-shadow: 0px 1px #fff;
+}
+#filter_slider .block_bg .baterfly .filter_left_col .catalog_link {
+  display: block;
+	height: 42px;
+	margin: 4px 0 11px 0;
+	font: italic 17px/42px arial;
+	color: #575757;
+	text-align: center;
+	text-shadow: 1px 1px #fff;
+	text-decoration: none;
+	background: url(../images/catalog_link.png) no-repeat 0 0;
+}
+#filter_slider .block_bg .baterfly .filter_left_col .catalog_link:hover {
+  color: #1A568D;
+}
+
+#filter_slider .block_bg .baterfly .filter_right_col {
+  float: right;
+	width: 480px;
+	height: 300px;
+	background: ;
+}
+#filter_slider .block_bg .baterfly .filter_right_col SPAN {
+  font: italic 29px/44px "Times New Roman";
+	color: #0F1D44;
+	margin: 0 0 0 35px;
+	text-shadow: 0px 1px #fff;
+}
+#filter_slider .block_bg .baterfly .filter_right_col SELECT {
+  width: 355px;
+	height: 33px;
+	margin: 0 0 15px 25px;
+}
+#filter_slider .block_bg .baterfly .filter_right_col .cost {
+  font: italic 20px/24px "Times New Roman";
+	color: #0F1D44;
+	padding: 0 0 0 30px;
+	text-shadow: 0px 1px #fff;
+}
+#filter_slider .block_bg .baterfly .filter_right_col .cost INPUT {
+  width: 95px;
+	height: 30px;
+	padding: 0 0 0 10px;
+	border: solid 1px #;
+	border-radius: 5px;
+	font: italic 15px arial;
+	text-shadow: 0px 1px #fff;
+	outline: 0;
+	background: #D0D0D0;
+}
+#filter_slider .block_bg .baterfly .filter_right_col .trackbar {
+  width: 447px;
+	height: 34px;
+	margin: 20px 0 0 0;
+	background: url(../images/trackbar.png) no-repeat 0 0;
+}
+#filter_slider .block_bg .baterfly .filter_right_col .but {
+  float: left;
+	width: 132px;
+	height: 45px;
+	font: italic 17px/45px arial;
+	color: #575757;
+	text-align: center;
+	text-shadow: 0 1px #fff;
+	margin: 20px 0 0 0;
+	border: none;
+	cursor: pointer;
+	background: url(../images/button.png) no-repeat 0 0;
+}
+#filter_slider .block_bg .baterfly .filter_right_col .indent {
+  float: left;
+	font: italic 12px/45px arial;
+	color: #575757;
+	text-shadow: 0 1px #fff;
+	height: 45px;
+	margin: 20px 0 0 30px;
+}
+#filter_slider .block_bg .baterfly .filter_right_col .result {
+	height: 24px;
+	position: relative;
+	float: left;
+	border: solid 1px #D0D0D0;
+	border-radius: 5px;
+	font: italic 12px/24px arial;
+	padding: 0 5px 0 5px;
+	margin: 30px 0 0 10px;
+	color: #216EB4;
+	background: #fff;
+}
+#filter_slider .block_bg .baterfly .filter_right_col .result .count {
+  position: absolute;
+	bottom: -6px;
+	right: 10%;
+	width: 6px;
+	height: 6px;
+	background: url(../images/count.png) no-repeat 0 0;
+}
+
+#filter_slider .block_bg .baterfly .filter_cont_col {
+  margin: 0 568px 0 350px;
+	height: 500px;
+	background: ;
+}
+#filter_slider .block_bg .baterfly .filter_cont_col .slide { 
+	width: 256px;
+  height: 342px;
+  overflow: hidden;
+	border-radius: 5px;
+	background: white;
+	position: relative;
+}
+
+#filter_slider .block_bg .baterfly .filter_cont_col .slide IMG {
+  margin: 8px;
+	border: solid 1px #307EC6;
+}
+#filter_slider .block_bg .baterfly .filter_cont_col .slide .prev {
+  position: absolute;
+	display: block;
+	left: 0px;
+	top: 120px;
+	width: 53px;
+	height: 61px;
+  background: url(../images/slider_arrow_left.png) no-repeat 0 0;
+}
+#filter_slider .block_bg .baterfly .filter_cont_col .slide .next {
+  position: absolute;
+	display: block;
+	right: 0px;
+	top: 120px;
+  width: 53px;
+	height: 61px;
+  background: url(../images/slider_arrow_right.png) no-repeat 0 0;
 }
 
 #actions {
@@ -62,3 +231,8 @@ A:hover {
   background: #EAEAEA;
   overflow: hidden;
 }
+
+
+
+
+
