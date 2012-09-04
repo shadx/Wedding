@@ -24,13 +24,15 @@ A:hover {
 #top_block {
   height: 80px;
   margin: 8px 0 0 0;
+  padding-bottom: 17px;
   overflow: hidden;
+  background: url(../images/top_menu-shadow.png) no-repeat 0 63px;
 }
 #top_block .top_menu {
   width: 990px;
   margin-top: 15px;
   background: #F4F4F4;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 #top_block .top_menu .top_menu_leftbg {
   width:  100%;
@@ -49,7 +51,7 @@ A:hover {
 }
 #top_block .top_menu .top_menu_leftbg .top_menu_rightbg UL LI {
   float: left;
-  background: url(../images/sep_top-menu.jpg) no-repeat 0 0;
+  background: url(../images/sep_top-menu.jpg) no-repeat 0 16px;
 }
 #top_block .top_menu .top_menu_leftbg .top_menu_rightbg UL LI:hover {
   background: url(../images/bg_act_top-menu.png) repeat-x 0 0;
@@ -73,7 +75,7 @@ A:hover {
 
 
 
-#top_block .korzina {
+#top_block .bask {
   float: right;
   width: 194px;
   height: 76px;
@@ -82,43 +84,48 @@ A:hover {
   background: #F3F3F3;
   overflow: hidden;
 }
-#top_block .korzina .korzina_right {
+#top_block .bask .bask_right {
   float: right;
   width: 102px;
   padding-top: 18px;
 }
-#top_block .korzina .korzina_right INPUT {
+#top_block .bask .bask_right .field {
   width: 92px;
-  height: 22px;
-  border: none;
   margin-bottom: 4px;
-  background: url(../images/bg_input_korzina.png) no-repeat 0 0;
+  /* background: url(../images/bg_field_bask.png) no-repeat 0 0; */
+  background: white;
+  border-style: solid;
+  border-color: #B0B0B1;
+  border-width: 1px 0 0 1px;
+  border-radius: 6px;
   text-align: center;
-  font: 12px arial;
+  font: italic 12px/22px arial;
   color: #1E1E1D;
 }
-#top_block .korzina .korzina_left {
+#top_block .bask .bask_left {
   float: left;
 }
-#top_block .korzina .korzina_left .my_hopping {
+#top_block .bask .bask_left .my_shopping {
   font: 12px arial;
   color: #0F1D44;
   margin: 5px 0 0 7px;
+  text-shadow: 0px 1px white;
 }
-#top_block .korzina .korzina_left .korzina_img {
+#top_block .bask .bask_left .bask_img {
   height: 30px;
 }
-#top_block .korzina .korzina_left .korzina_img IMG {
+#top_block .bask .bask_left .bask_img IMG {
   margin: 2px 0 0 28px;
 }
-#top_block .korzina .korzina_left A {
+#top_block .bask .bask_left A {
   display: block;
   margin: 6px 0 0 3px;
   font: 11px arial;
   color: #0F1D44;
   text-decoration: underline;
+  text-shadow: 0px 1px white;
 }
-#top_block .korzina .korzina_left A:hover {
+#top_block .bask .bask_left A:hover {
   text-decoration: none;
 }
 
@@ -127,7 +134,7 @@ A:hover {
 
 #header {
   height: 173px;
-  margin: 17px 0 0 0;
+  margin: 0 0 0 0;
   overflow: hidden;
 }
 #header .header_left {
@@ -136,9 +143,11 @@ A:hover {
   height: 173px;
 }
 #header .header_left .logo {
+  display: block;
   width: 409px;
   height: 109px;
   background: url(../images/logo.png) no-repeat 55px 10px;
+  text-indent: -9999px;
 }
 #header .header_left .vk_nravitsya {
   width: 248px;
@@ -176,11 +185,11 @@ A:hover {
   border-radius: 0 7px 7px 0;
   background: url(../images/bg_head-slider.jpg) no-repeat right bottom #F6F2E6;
 }
-#header .header_right .top_slider_right .top_slider_right_caption {
+#header .header_right .top_slider_right .slider_caption {
   height: 138px;
   border-radius: 0 7px 0 0 ;
 }
-#header .header_right .top_slider_right .top_slider_right_navi {
+#header .header_right .top_slider_right .slider_navi {
   float: right:
   width: 512px;
   height: 30px;
@@ -197,7 +206,6 @@ A:hover {
 #filter_slider {
   margin: 13px 0 0 0;
 	padding: 15px;
-  background: ;
   overflow: hidden;
 	border-radius: 5px;
 	background: url(../images/bg_prozrachnost.png) repeat 0 0;
@@ -218,15 +226,15 @@ A:hover {
 	width: 280px;
 	height: 300px;
 	margin: 0px 0 0 0;
-	background: ;
 }
-#filter_slider .block_bg .baterfly .filter_left_col .catalog_head {
+#filter_slider .block_bg .baterfly .filter_left_col P {
+  margin: 0;
   font:bold italic 29px/44px "Times New Roman";
 	color: #0F1D44;
 	text-align: center;
 	text-shadow: 0px 1px #fff;
 }
-#filter_slider .block_bg .baterfly .filter_left_col .catalog_link {
+#filter_slider .block_bg .baterfly .filter_left_col A {
   display: block;
 	height: 42px;
 	margin: 4px 0 11px 0;
@@ -237,9 +245,8 @@ A:hover {
 	text-decoration: none;
 	background: url(../images/filter_slider_link.png) no-repeat 0 0;
 }
-#filter_slider .block_bg .baterfly .filter_left_col .catalog_link:hover {
+#filter_slider .block_bg .baterfly .filter_left_col A:hover {
   color: #1A568D;
-	text-decoration: underline;
 }
 
 #filter_slider .block_bg .baterfly .filter_right_col {
@@ -247,7 +254,6 @@ A:hover {
 	width: 480px;
 	height: 300px;
 	margin: 0px 0 0 0;
-	background: ;
 }
 #filter_slider .block_bg .baterfly .filter_right_col SPAN {
   font: bold italic 29px/44px "Times New Roman";
@@ -315,7 +321,7 @@ A:hover {
 	border: solid 1px #D0D0D0;
 	border-radius: 5px;
 	font: italic 12px/24px arial;
-	padding: 0 5px 0 5px;
+	padding: 0 7px 0 5px;
 	margin: 30px 0 0 10px;
 	color: #216EB4;
 	background: #fff;
@@ -332,15 +338,15 @@ A:hover {
 #filter_slider .block_bg .baterfly .filter_cont_col {
   margin: 0 568px 0 350px;
 	height: 500px;
-	background: ;
 }
 #filter_slider .block_bg .baterfly .filter_cont_col .slide { 
 	width: 256px;
   height: 342px;
 	margin: 10px 0 0 0;
   overflow: hidden;
-	border-radius: 5px;
-	background: white;
+	border: solid 1px white;
+  border-radius: 5px;
+	background: #F1F1F1;
 	position: relative;
 }
 
@@ -401,7 +407,7 @@ A:hover {
 }
 #actions .actions_block .actions_block_head A {
   margin-left: 17px;
-  font: 14px/14px "times new roman";
+  font: 12px/14px arial;
   color: #56595C;
   text-decoration: underline;
 }
@@ -565,12 +571,15 @@ A:hover {
 #articles .inner_articles .inner_art_bg .articl {
   border: solid 1px #DADADA;
 	float: left;
-	width: 510px;	
-	border-radius: 5px;
+	width: 529px;	
+	border-radius: 7px;
 	background: #fff;
 	margin: 0 22px 15px 0;
 	padding: 20px 15px 15px 15px;
 	overflow: hidden;
+}
+#articles .inner_articles .inner_art_bg .last_articl {
+  margin-right: 0;
 }
 #articles .inner_articles .inner_art_bg .articl .date {
   float: left;
@@ -585,15 +594,19 @@ A:hover {
 	float: left;
 }
 #articles .inner_articles .inner_art_bg .articl .date .rings {
+  margin: 0 21px 0 0;
+  overflow: hidden;
+}
+#articles .inner_articles .inner_art_bg .articl .date .rings IMG {
+  float: left;
+  padding: 3px 4px 0px 4px;
   border: solid 1px #DADADA;
 	border-radius: 6px;
-	margin: 0 25px 0 0;
 }
 #articles .inner_articles .inner_art_bg .articl .text {
   font: 12px arial;
 	color: #1E1E1D;
-	float: right;
-	width: 350px;
+	margin-left: 160px;
 }
 #articles .inner_articles .text_2 .inner_articles_head {
   font: italic 29px "Times New Roman";
@@ -601,12 +614,14 @@ A:hover {
 	text-shadow: 0px 1px #fff;
 	margin: 0 0 0 13px;
 }
+.main_text_block {
+  margin-top: 10px;
+  overflow: hidden;
+}
 #articles .inner_articles .text_2 {
   font: 12px verdana;
 	color: #000;
-	margin: 0 0 0 10px;
-	width: 930px;
-	float: left;
+	margin: 0 300px 0 10px;
 }
 #articles .inner_articles .rings {
   float: right;
@@ -617,13 +632,12 @@ A:hover {
 	margin: 0 0 0 10px;
 }
 #articles .inner_articles .vk {
-	margin: 10px 10px 10px 0;
+	margin: 10px 20px 10px 0;
 	float: right;
 }
 
 #footer {
   margin: 20px 0 0 0;
-  background: ;
   overflow: hidden;
 	border-radius: 5px 5px 0 0;
 	background: url(../images/bg_prozrachnost.png) repeat 0 0;
@@ -656,7 +670,10 @@ A:hover {
 	font: 12px verdana;
 	color: #000;
 }
-#footer .footer_bg .reitings {
+#footer .footer_bg .copyright A {
+  color: #000;
+}
+#footer .footer_bg .ratings {
   float: right;
 }
 #footer .footer_bg .footer_logo {
@@ -668,11 +685,10 @@ A:hover {
 	overflow: hidden;
 	background: url(../images/footer_logo.png) no-repeat 0 0;
 }
-#footer .footer_bg .money {
+#footer .footer_bg .cards {
   float: right;
 	overflow: hidden;
 }
-
-
-
-
+#footer .footer_bg .cards IMG {
+  margin-left: 5px;
+}

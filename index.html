@@ -6,26 +6,22 @@
   
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
-	<script type="text/javascript" src="js/jquery.bxSlider.min.js"></script>
-  
+	
   <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
-	<link href="css/bx_styles.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
 	<div id="wrapper">
     <div id="top_block">
-      <div class="korzina">
-        <div class="korzina_left">
-          <div class="my_hopping">Моя корзина</div>
-          <div class="korzina_img"><img src="images/korzina.png" alt="#" /></div>
+      <div class="bask">
+        <div class="bask_left">
+          <div class="my_shopping">Моя корзина</div>
+          <div class="bask_img"><img src="images/bask.png" alt="#" /></div>
           <a href="#">Оформить заказ</a>
         </div>
-        <div class="korzina_right">
-          <div>
-            <input type="text" value="5 товаров" /><br />
-            <input class="last" type="text" value="250 000 руб." />
-          </div>
+        <div class="bask_right">
+          <div class="field">5 товаров</div>
+          <div class="field">250 000 руб.</div>
         </div>  
       </div>
       <div class="top_menu">
@@ -47,7 +43,7 @@
     
     <div id="header">
       <div class="header_left">
-        <div class="logo"></div>
+        <a class="logo" href="#">Beauty - Салон свадебной и вечерней моды</a>
         <div class="vk_nravitsya"><a href="#"><img src="tmp/vk-nravitsya.jpg" alt="#" /></a></div>
       </div>
       <div class="header_right">
@@ -56,8 +52,8 @@
             <a href="#"><img src="tmp/img_top-slider.jpg" alt="#" /></a>
           </div>
           <div class="top_slider_right">
-            <div class="top_slider_right_caption"></div>
-            <div class="top_slider_right_navi"><img src="images/top_slider-navi.jpg" alt="#" /></div>
+            <div class="slider_caption"></div>
+            <div class="slider_navi"><img src="images/top_slider-navi.jpg" alt="#" /></div>
           </div>
         </div>
       </div>
@@ -67,7 +63,7 @@
 			<div class="block_bg">
 			  <div class="baterfly">
 					<div class="filter_left_col">
-					  <div class="catalog_head">Каталог</div>
+					  <p>Каталог</p>
 						<ul>
 						  <li><a class="catalog_link" href="#">Свадебные платья</a></li>
 							<li><a class="catalog_link" href="#">Вечерние платья</a></li>
@@ -96,7 +92,7 @@
 								<div class="trackbar"></div>
 								<input class="but" type="submit" value="показать" name="#" />
 								<div class="indent">соответствует </div>
-								<div class="result">1000000<div class="count"></div></div>
+								<div class="result">256<div class="count"></div></div>
 							</div>
 						</form>
 					</div>
@@ -106,8 +102,6 @@
 							<a class="next" href="#"></a>
 							<ul>
 								<li><a href="#"><img src="tmp/slider_img-1.jpg" alt="" title="" /></a></li>
-								<li><a href="#"><img src="tmp/slider_img-2.jpg" alt="" title="" /></a></li>
-								<li><a href="#"><img src="tmp/slider_img-3.jpg" alt="" title="" /></a></li>
 							</ul>
 						</div>
 					</div>
@@ -125,7 +119,7 @@
           <div class="brands_block">
             <div class="brands_item">
               <div class="skidki_cena">10 000 руб.</div>
-              
+              <div class="skidki"></div>
               <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div> 
               <span>159 000</span>
             </div>
@@ -146,14 +140,12 @@
             <div class="brands_item brands_item_left">
               <div class="novinki_cena">10 000 руб.</div>
               <div class="novinki"></div>
-              <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div> 
-              <!--<span>159 000</span>-->
+              <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div>
             </div>
             <div class="brands_item brands_item_left last">
               <div class="novinki_cena">10 000 руб.</div>
               <div class="novinki"></div>
-              <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div> 
-              <!--<span>159 000</span> -->
+              <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div>
             </div>
           </div>
         </div>
@@ -167,19 +159,19 @@
               <!--<div class="skidki_cena">10 000 руб.</div>
               <div class="skidki"></div>-->
               <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div> 
-              <a>Платье King Koil Verso</a>
+              <a href="#">Платье King Koil Verso</a>
             </div>
             <div class="brands_item brands_item_center">
               <!--<div class="skidki_cena">10 000 руб.</div>
               <div class="skidki"></div>-->
               <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div> 
-              <a>Платье King Koil Verso</a>
+              <a href="#">Платье King Koil Verso</a>
             </div>
             <div class="brands_item brands_item_center last">
               <!--<div class="skidki_cena">10 000 руб.</div>
               <div class="skidki"></div>-->
               <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div> 
-              <a>Платье King Koil Verso</a>
+              <a href="#">Платье King Koil Verso</a>
             </div>
           </div>
         </div>
@@ -194,55 +186,57 @@
 					<a class="articles_link" href="#">смотреть статьи</a><br />
 					<div class="articl">
 						<div class="date">
-						  <div class="data">23<br />августа<br />2012</div>
-							<div class="rings"><img src="tmp/mini_rings.jpg" alt="" title="" /></div>
+						  <div class="data"><strong>23</strong><br />августа<br />2012</div>
+							<div class="rings"><img src="tmp/mini_rings.png" alt="" title="" /></div>
 						</div>
 						<div class="text"><strong>Мы приглашаем Вас в наш уютный свадебный салон<br />в Москве рядом с метро Новослободская!</strong><br />В нашем ассортименте представлены только самые лучшие <br />платья из коллекций 2012 и 2011 года от известных <br />дизайнеров.</div>
 					</div>
-					<div class="articl">
+					<div class="articl last_articl">
 						<div class="date">
-						  <div class="data">23<br />августа<br />2012</div>
-							<div class="rings"><img src="tmp/mini_rings.jpg" alt="" title="" /></div>
+						  <div class="data"><strong>23</strong><br />августа<br />2012</div>
+							<div class="rings"><img src="tmp/mini_rings.png" alt="" title="" /></div>
 						</div>
 						<div class="text"><strong>Мы приглашаем Вас в наш уютный свадебный салон<br />в Москве рядом с метро Новослободская!</strong><br />В нашем ассортименте представлены только самые лучшие <br />платья из коллекций 2012 и 2011 года от известных <br />дизайнеров.</div>
 					</div>
-					<div class="articl">
+          <div class="articl">
 						<div class="date">
-						  <div class="data">23<br />августа<br />2012</div>
-							<div class="rings"><img src="tmp/mini_rings.jpg" alt="" title="" /></div>
+						  <div class="data"><strong>23</strong><br />августа<br />2012</div>
+							<div class="rings"><img src="tmp/mini_rings.png" alt="" title="" /></div>
 						</div>
 						<div class="text"><strong>Мы приглашаем Вас в наш уютный свадебный салон<br />в Москве рядом с метро Новослободская!</strong><br />В нашем ассортименте представлены только самые лучшие <br />платья из коллекций 2012 и 2011 года от известных <br />дизайнеров.</div>
 					</div>
-					<div class="articl">
+          <div class="articl last_articl">
 						<div class="date">
-						  <div class="data">23<br />августа<br />2012</div>
-							<div class="rings"><img src="tmp/mini_rings.jpg" alt="" title="" /></div>
+						  <div class="data"><strong>23</strong><br />августа<br />2012</div>
+							<div class="rings"><img src="tmp/mini_rings.png" alt="" title="" /></div>
 						</div>
 						<div class="text"><strong>Мы приглашаем Вас в наш уютный свадебный салон<br />в Москве рядом с метро Новослободская!</strong><br />В нашем ассортименте представлены только самые лучшие <br />платья из коллекций 2012 и 2011 года от известных <br />дизайнеров.</div>
 					</div>
-					<div class="articl">
+          <div class="articl">
 						<div class="date">
-						  <div class="data">23<br />августа<br />2012</div>
-							<div class="rings"><img src="tmp/mini_rings.jpg" alt="" title="" /></div>
+						  <div class="data"><strong>23</strong><br />августа<br />2012</div>
+							<div class="rings"><img src="tmp/mini_rings.png" alt="" title="" /></div>
 						</div>
 						<div class="text"><strong>Мы приглашаем Вас в наш уютный свадебный салон<br />в Москве рядом с метро Новослободская!</strong><br />В нашем ассортименте представлены только самые лучшие <br />платья из коллекций 2012 и 2011 года от известных <br />дизайнеров.</div>
 					</div>
-					<div class="articl">
+          <div class="articl last_articl">
 						<div class="date">
-						  <div class="data">23<br />августа<br />2012</div>
-							<div class="rings"><img src="tmp/mini_rings.jpg" alt="" title="" /></div>
+						  <div class="data"><strong>23</strong><br />августа<br />2012</div>
+							<div class="rings"><img src="tmp/mini_rings.png" alt="" title="" /></div>
 						</div>
 						<div class="text"><strong>Мы приглашаем Вас в наш уютный свадебный салон<br />в Москве рядом с метро Новослободская!</strong><br />В нашем ассортименте представлены только самые лучшие <br />платья из коллекций 2012 и 2011 года от известных <br />дизайнеров.</div>
 					</div>
 				</div>
-				<div class="text_2">
-				  <div class="inner_articles_head">О салоне</div>
-					<img class="rings" src="tmp/rings.jpg" alt="" title="" />
-					<p>Ищете салон, где можно получить скидки на свадебные или вечерние платья? Тогда Вам точно к нам!<br />Очаровательный макияж, прическа, аккуратный маникюр – все это неотъемлемые атрибуты <br />предсвадебной суеты. В салонах «Беллиссимо» для Вас раскроются секреты женской красоты. <br />Посмотреть примеры работ наших профессиональных визажистов, парикмахеров, дизайнеров ногтей <br />можно прямо сейчас на нашем сайте!</p><p>Какая невеста, будучи еще совсем юной в детстве, не мечтала о великолепной свадьбе с роскошным <br />платьем! Эта сказка сегодня легко станет реальностью с помощью наших салонов. Мы с радостью готовы <br />помочь Вам не только с подбором свадебного наряда, но и с тем, как одеть его согласно всем правилам <br />свадебного искусства.</p>
-				</div>
-				<div class="vk"><img src="tmp/vk.jpg" alt="" title="" /></div>
-				<div class="text_3">В салонах «BRIDAL BEAUTY» свадебные платья и аксессуары представлены в различных стилях и для всех возрастных категорий. Вот почему наряд каждой невесты, подобранный в нашем салоне, всегда гармонично выражает ее индивидуальность.</div>
-				
+				<div class="main_text_block">
+          <div class="vk"><img src="tmp/vk.jpg" alt="" title="" /></div>
+          <div class="text_2">
+  				  <div class="inner_articles_head">О салоне</div>
+  					<img class="rings" src="tmp/rings.jpg" alt="" title="" />
+  					<p>Ищете салон, где можно получить скидки на свадебные или вечерние платья? Тогда Вам точно к нам! Очаровательный макияж, прическа, аккуратный маникюр – все это неотъемлемые атрибуты  предсвадебной суеты. В салонах «Беллиссимо» для Вас раскроются секреты женской красоты.  Посмотреть примеры работ наших профессиональных визажистов, парикмахеров, дизайнеров ногтей  можно прямо сейчас на нашем сайте!</p>
+            <p>Какая невеста, будучи еще совсем юной в детстве, не мечтала о великолепной свадьбе с роскошным  платьем! Эта сказка сегодня легко станет реальностью с помощью наших салонов. Мы с радостью готовы  помочь Вам не только с подбором свадебного наряда, но и с тем, как одеть его согласно всем правилам  свадебного искусства.</p>
+            <p>В салонах «BRIDAL BEAUTY» свадебные платья и аксессуары представлены в различных стилях и для всех возрастных категорий. Вот почему наряд каждой невесты, подобранный в нашем салоне, всегда гармонично выражает ее индивидуальность.</p>
+  				</div>
+        </div>
 			</div>
     </div>
     
@@ -280,11 +274,11 @@
 						<li><a class="footer_link" href="#">Форум</a></li>
 						<li><a class="footer_link" href="#">Вконтакте</a></li>
 					</ul>
-					<div class="reitings"><img src="tmp/reitings.jpg" alt="" title="" /></div>
+					<div class="ratings"><a href="#"><img src="tmp/ratings.jpg" alt="" title="" /></a></div>
 				  <a class="footer_logo" href="#">Beauty - салон свадебной и вечерней моды</a>
 				</div>
-				<div class="copyright">Copyright 2012 © Beauty - Салон свадебной и вечерней моды. Все права защищены. Свадебные платья,<br /> Вечерние платья, Фата, перчатки, нижнее бельё и т.д.<br /><br /> Доставка по всей России! Телефон:8 (8617) 769-68-86 (круглосуточно).</div>
-				<div class="money">
+				<div class="copyright">Copyright 2012 &copy; <a href="#">Beauty</a> - Салон свадебной и вечерней моды. Все права защищены. Свадебные платья,<br /> Вечерние платья, Фата, перчатки, нижнее бельё и т.д.<br /><br /> Доставка по всей России! Телефон:8 (8617) 769-68-86 (круглосуточно).</div>
+				<div class="cards">
 				  <img src="images/webmoney.png" alt="" title="" />
 					<img src="images/mastercard.png" alt="" title="" />
 					<img src="images/visa.png" alt="" title="" />
