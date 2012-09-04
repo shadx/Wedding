@@ -36,43 +36,33 @@ A:hover {
 }
 
 #filter_slider {
-  height: 396px;
   margin: 13px 0 0 0;
+	padding: 15px;
   background: ;
   overflow: hidden;
-}
-#filter_slider .block_left_bg {
-  float: left;
-	width: 21px;
-	height: 396px;
-  background: url(../images/catalog_left_bg.png) no-repeat 0 0;
-}
-#filter_slider .block_right_bg {
-  float: right;
-	width: 21px;
-	height: 396px;
-  background: url(../images/catalog_right_bg.png) no-repeat 0 0;
+	border-radius: 5px;
+	background: url(../images/bg_prozrachnost.png) repeat 0 0;
 }
 #filter_slider .block_bg {
-  margin: 0px 21px 0 21px;
-	height: 396px;
-  background: url(../images/catalog_bg.png) repeat-x 0 0;
+	border: solid 3px #FDFDFD;
+	border-radius: 8px;
+  background: url(../images/filter_slider_articles_bg.png) repeat 0 0;
 }
 #filter_slider .block_bg .baterfly {
   width: 1158px;
-	height: 396px;
-	padding: 20px 0 0 0;
-  background: url(../images/catalog_baterfly.png) no-repeat 100% 10px;
+	height: 363px;
+  background: url(../images/filter_slider_baterfly.png) no-repeat 100% bottom;
 }
 
 #filter_slider .block_bg .baterfly .filter_left_col {
   float: left;
 	width: 280px;
 	height: 300px;
+	margin: 0px 0 0 0;
 	background: ;
 }
 #filter_slider .block_bg .baterfly .filter_left_col .catalog_head {
-  font: italic 29px/44px "Times New Roman";
+  font:bold italic 29px/44px "Times New Roman";
 	color: #0F1D44;
 	text-align: center;
 	text-shadow: 0px 1px #fff;
@@ -86,23 +76,27 @@ A:hover {
 	text-align: center;
 	text-shadow: 1px 1px #fff;
 	text-decoration: none;
-	background: url(../images/catalog_link.png) no-repeat 0 0;
+	background: url(../images/filter_slider_link.png) no-repeat 0 0;
 }
 #filter_slider .block_bg .baterfly .filter_left_col .catalog_link:hover {
   color: #1A568D;
+	text-decoration: underline;
 }
 
 #filter_slider .block_bg .baterfly .filter_right_col {
   float: right;
 	width: 480px;
 	height: 300px;
+	margin: 0px 0 0 0;
 	background: ;
 }
 #filter_slider .block_bg .baterfly .filter_right_col SPAN {
-  font: italic 29px/44px "Times New Roman";
+  font: bold italic 29px/44px "Times New Roman";
 	color: #0F1D44;
 	margin: 0 0 0 35px;
+	padding: 0 35px 0 0;
 	text-shadow: 0px 1px #fff;
+	background: url(../images/filter_slider_zoom.png) no-repeat 100% 70%;
 }
 #filter_slider .block_bg .baterfly .filter_right_col SELECT {
   width: 355px;
@@ -110,18 +104,20 @@ A:hover {
 	margin: 0 0 15px 25px;
 }
 #filter_slider .block_bg .baterfly .filter_right_col .cost {
-  font: italic 20px/24px "Times New Roman";
+  font:bold italic 20px/24px "Times New Roman";
 	color: #0F1D44;
-	padding: 0 0 0 30px;
+	padding: 10px 0 0 35px;
 	text-shadow: 0px 1px #fff;
 }
 #filter_slider .block_bg .baterfly .filter_right_col .cost INPUT {
   width: 95px;
 	height: 30px;
+	margin: 0 30px 0 10px;
 	padding: 0 0 0 10px;
-	border: solid 1px #;
+	
 	border-radius: 5px;
 	font: italic 15px arial;
+	color: #575757;
 	text-shadow: 0px 1px #fff;
 	outline: 0;
 	background: #D0D0D0;
@@ -129,21 +125,21 @@ A:hover {
 #filter_slider .block_bg .baterfly .filter_right_col .trackbar {
   width: 447px;
 	height: 34px;
-	margin: 20px 0 0 0;
-	background: url(../images/trackbar.png) no-repeat 0 0;
+	margin: 30px 0 0 20px;
+	background: url(../images/filter_slider_trackbar.png) no-repeat 0 0;
 }
 #filter_slider .block_bg .baterfly .filter_right_col .but {
   float: left;
 	width: 132px;
 	height: 45px;
-	font: italic 17px/45px arial;
+	font:bold italic 17px/45px arial;
 	color: #575757;
 	text-align: center;
 	text-shadow: 0 1px #fff;
-	margin: 20px 0 0 0;
+	margin: 20px 0 0 20px;
 	border: none;
 	cursor: pointer;
-	background: url(../images/button.png) no-repeat 0 0;
+	background: url(../images/filter_slider_button.png) no-repeat 0 0;
 }
 #filter_slider .block_bg .baterfly .filter_right_col .indent {
   float: left;
@@ -171,7 +167,7 @@ A:hover {
 	right: 10%;
 	width: 6px;
 	height: 6px;
-	background: url(../images/count.png) no-repeat 0 0;
+	background: url(../images/filter_slider_count.png) no-repeat 0 0;
 }
 
 #filter_slider .block_bg .baterfly .filter_cont_col {
@@ -182,6 +178,7 @@ A:hover {
 #filter_slider .block_bg .baterfly .filter_cont_col .slide { 
 	width: 256px;
   height: 342px;
+	margin: 10px 0 0 0;
   overflow: hidden;
 	border-radius: 5px;
 	background: white;
@@ -191,6 +188,7 @@ A:hover {
 #filter_slider .block_bg .baterfly .filter_cont_col .slide IMG {
   margin: 8px;
 	border: solid 1px #307EC6;
+	float: left;
 }
 #filter_slider .block_bg .baterfly .filter_cont_col .slide .prev {
   position: absolute;
@@ -199,7 +197,7 @@ A:hover {
 	top: 120px;
 	width: 53px;
 	height: 61px;
-  background: url(../images/slider_arrow_left.png) no-repeat 0 0;
+  background: url(../images/filter_slider_slider_arrow_left.png) no-repeat 0 0;
 }
 #filter_slider .block_bg .baterfly .filter_cont_col .slide .next {
   position: absolute;
@@ -208,7 +206,7 @@ A:hover {
 	top: 120px;
   width: 53px;
 	height: 61px;
-  background: url(../images/slider_arrow_right.png) no-repeat 0 0;
+  background: url(../images/filter_slider_slider_arrow_right.png) no-repeat 0 0;
 }
 
 #actions {
@@ -219,19 +217,150 @@ A:hover {
 }
 
 #articles {
-  height: 759px;
   margin: 24px 0 0 0;
-  background: #EAEAEA;
+	padding: 15px;
+	border-radius: 5px;
+  background: url(../images/bg_prozrachnost.png) repeat 0 0;
   overflow: hidden;
+}
+#articles .inner_articles {
+  border-radius: 8px;
+	background: #fff;
+	overflow: hidden;
+	padding: 0 0 10px 0;
+}
+#articles .inner_articles .inner_art_bg {
+  border: solid 3px #FDFDFD;
+	border-radius: 8px;
+	padding: 10px;
+	overflow: hidden;
+  background: url(../images/filter_slider_articles_bg.png) repeat 0 0;
+}
+#articles .inner_articles .inner_art_bg .inner_articles_head {
+  float: left;
+	font: italic 29px "Times New Roman";
+	color: #0F1D44;
+	text-shadow: 0px 1px #fff;
+	margin: 0 50px 0 0;
+}
+#articles .inner_articles .inner_art_bg .articles_link {
+  font: 12px/40px arial;
+	color: #56595C;
+	text-decoration: underline;
+}
+#articles .inner_articles .inner_art_bg .articles_link:hover {
+	text-decoration: none;
+}
+#articles .inner_articles .inner_art_bg .articl {
+  border: solid 1px #DADADA;
+	float: left;
+	width: 510px;	
+	border-radius: 5px;
+	background: #fff;
+	margin: 0 22px 15px 0;
+	padding: 20px 15px 15px 15px;
+	overflow: hidden;
+}
+#articles .inner_articles .inner_art_bg .articl .date {
+  float: left;
+	overflow: hidden;
+	width: 155px;
+}
+#articles .inner_articles .inner_art_bg .articl .date .data {
+  font: 15px/15px arial;
+	margin: 3px 25px 0 0;
+	color: #A9B2B7;
+	text-align: center;
+	float: left;
+}
+#articles .inner_articles .inner_art_bg .articl .date .rings {
+  border: solid 1px #DADADA;
+	border-radius: 6px;
+	margin: 0 25px 0 0;
+}
+#articles .inner_articles .inner_art_bg .articl .text {
+  font: 12px arial;
+	color: #1E1E1D;
+	float: right;
+	width: 350px;
+}
+#articles .inner_articles .text_2 .inner_articles_head {
+  font: italic 29px "Times New Roman";
+	color: #0F1D44;
+	text-shadow: 0px 1px #fff;
+	margin: 0 0 0 13px;
+}
+#articles .inner_articles .text_2 {
+  font: 12px verdana;
+	color: #000;
+	margin: 0 0 0 10px;
+	width: 930px;
+	float: left;
+}
+#articles .inner_articles .rings {
+  float: right;
+}
+#articles .inner_articles .text_3 {
+  font: 12px verdana;
+	color: #000;
+	margin: 0 0 0 10px;
+}
+#articles .inner_articles .vk {
+	margin: 10px 10px 10px 0;
+	float: right;
 }
 
 #footer {
-  height: 313px;
   margin: 20px 0 0 0;
-  background: #EAEAEA;
+  background: ;
   overflow: hidden;
+	border-radius: 5px 5px 0 0;
+	background: url(../images/bg_prozrachnost.png) repeat 0 0;
 }
-
+#footer .footer_bg {
+	margin: 16px 20px 0 20px;
+	padding: 15px;
+	overflow: hidden;
+	background: url(../images/footer_inner_bg.png) repeat-x bottom  #E3E5E7;
+}
+#footer .footer_bg .footer_menu {
+	font: 12px/24px verdana;
+	color: #000;
+	overflow: hidden;
+}
+#footer .footer_bg .footer_menu UL {
+  float: left;
+	margin: 0 100px 0 0;
+}
+#footer .footer_bg .footer_menu .footer_link {
+  font: 12px verdana;
+	color: #000;
+	margin: 0 0 0 10px;
+	padding: 0 0 0 10px;
+	background: url(../images/footer_link.png) no-repeat 0 50%;
+}
+#footer .footer_bg .copyright {
+  float: left;
+	margin: 20px 0 0 0;
+	font: 12px verdana;
+	color: #000;
+}
+#footer .footer_bg .reitings {
+  float: right;
+}
+#footer .footer_bg .footer_logo {
+  display: block;
+	width: 227px;
+	height: 83px;
+	float: right;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(../images/footer_logo.png) no-repeat 0 0;
+}
+#footer .footer_bg .money {
+  float: right;
+	overflow: hidden;
+}
 
 
 
