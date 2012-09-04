@@ -174,36 +174,17 @@ A:hover {
 #header .header_right .top_slider_right {
   height: 167px;
   border-radius: 7px 0 0 7px;
-  background: url(../images/bg_head-slider.jpg) no-repeat right bottom green;
+  background: url(../images/bg_head-slider.jpg) no-repeat right bottom #F6F2E6;
 }
 #header .header_right .top_slider_right .top_slider_right_caption {
   height: 138px;
-  background: red;
 }
 #header .header_right .top_slider_right .top_slider_right_navi {
+  float: right:
   width: 511px;
   height: 29px;
+  margin: 0 0 0 269px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -218,12 +199,164 @@ A:hover {
   overflow: hidden;
 }
 
+
+
+
+
+
 #actions {
-  height: 300px;
+  height: 265px;
+  border-radius: 6px;
+  padding: 14px 14px 15px 14px;
   margin: 21px 0 0 0;
-  background: #EAEAEA;
+  background: url(../images/bg_prozrachnost.png) repeat 0 0;
   overflow: hidden;
 }
+#actions .actions_block {
+  height: 245px;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding-top: 16px;
+  background: url(../images/bg_actions_block.png) repeat 0 0;
+}
+#actions .actions_block .actions_block_right {
+  float: right;
+  width: 315px;
+  height: 245px;
+  border-radius: 0 0 6px 0;  
+}
+#actions .actions_block .actions_block_head {
+  margin-bottom: 20px;
+  font: italic 29px/29px "times new roman";
+  color: #0F1D44;
+}
+#actions .actions_block .actions_block_head A {
+  margin-left: 17px;
+  font: 14px/14px "times new roman";
+  color: #56595C;
+  text-decoration: underline;
+}
+#actions .actions_block .actions_block_head A:hover {
+  text-decoration: none;
+}
+#actions .actions_block .brands_block {
+  overflow: hidden;
+}
+#actions .actions_block .brands_block .brands_item {
+  float: left;
+  width: 100px;
+  margin-right: 68px;
+  position: relative;
+}
+#actions .actions_block .brands_block .last {
+  margin-right: 0;
+}
+#actions .actions_block .brands_block .brands_item .brands_item_img {
+  border: 3px solid white;
+  margin: 0 0 4px 0;
+  color: white;
+  overflow: hidden;
+}
+#actions .actions_block .brands_block .brands_item .brands_item_img IMG {
+  float: left;
+}
+#actions .actions_block .brands_block .brands_item SPAN {
+  display: block;
+  font: 17px arial;
+  color: #9E9D9A;
+  text-align: center;
+  text-decoration: line-through ;
+  
+}
+#actions .actions_block .actions_block_right .brands_block .brands_item .skidki_cena {
+  width: 94px;
+  height: 21px;
+  background: url(../images/bg_skidki.png) repeat 0 0;
+  text-align: center;
+  font: 12px/21px arial;
+  color: black;
+  position: absolute;
+  z-index: 999;
+  top: 108px;
+  left: 3px;
+}
+#actions .actions_block .actions_block_left .brands_block .brands_item .novinki_cena {
+  width: 94px;
+  height: 21px;
+  background: url(../images/bg_skidki.png) repeat 0 0;
+  text-align: center;
+  font: 12px/21px arial;
+  color: black;
+  position: absolute;
+  z-index: 999;
+  top: 108px;
+  left: 3px;
+}
+#actions .actions_block .actions_block_right .brands_block .brands_item .skidki {
+  width: 58px;
+  height: 59px;
+  background: url(../images/skidki.png) no-repeat 0 0;
+  position: absolute;
+  z-index: 9999;
+  top: 85px;
+  right: -35px;
+}#actions .actions_block .actions_block_left .brands_block .brands_item .novinki {
+  width: 58px;
+  height: 59px;
+  background: url(../images/novinki.png) no-repeat 0 0;
+  position: absolute;
+  z-index: 9999;
+  top: 85px;
+  right: -35px;
+}
+#actions .actions_block .actions_block_left {
+  float: left;
+  width: 324px;
+  height: 245px;
+  padding-left: 11px;
+  border-radius: 0 0 0 6px;  
+}
+#actions .actions_block .actions_block_left .brands_block .brands_item_left {
+  margin-right: 89px;  
+}
+#actions .actions_block .actions_block_left .brands_block .last {
+  margin-right: 0;  
+}
+#actions .actions_block .actions_block_center {
+  margin-left: 409px;   
+}
+#actions .actions_block .actions_block_center .brands_block .brands_item_center {
+  margin-right: 35px;
+  font: 12px arial;
+  color: #005EAC;   
+}
+#actions .actions_block .actions_block_center .brands_block .brands_item_center A {
+  margin-right: 0;
+  color: #005EAC;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #articles {
   height: 759px;
