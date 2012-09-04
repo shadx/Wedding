@@ -1,0 +1,149 @@
+/* Dropdown control */
+.selectBox-dropdown {
+	/* padding-right: 15px; */
+	position: relative;
+	text-decoration: none;
+	width: 356px;
+  height: 33px;
+  margin: 0 0 15px 25px;
+	vertical-align: middle;
+	background: url(../images/select-bg.png) no-repeat 0 0;
+	display: inline-block;
+	cursor: pointer;
+	font: italic 14px/33px arial;
+  color: #575757;
+  border: none;
+	z-index:5;
+	outline: none;
+  text-shadow: 0px 1px #fff;
+}
+.filter_select .selectBox-dropdown{
+	height: 33px;
+	font: italic 14px/33px arial;
+}
+.users_switcher .selectBox-dropdown {
+	background:none;
+	border:none;
+	width:auto;
+	color:#fff;
+	font: italic 14px/33px arial;
+	line-height:normal;
+	height:16px;
+}
+.users_switcher  .selectBox-dropdown .selectBox-label{
+	font: italic 14px/33px arial;
+	color:#fff;
+}
+.users_switcher .selectBox-dropdown .selectBox-label{
+	padding:0;
+}
+.select_wrapper{
+	display:block;
+	float:none;
+	position:relative;
+	z-index: 1;
+}
+.selectBox-dropdown:hover{color: #666;}
+
+.selectBox-dropdown.selectBox-menuShowing {
+	
+}
+.selectBox.selectBox-menuShowing{
+	
+}
+.selectBox-dropdown .selectBox-label {
+	padding:0 20px 0 7px;
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	position:relative;
+	z-index:2;
+	color:#000;
+}
+.selectBox-dropdown .selectBox-label:hover{cursor:pointer;}
+.selectBox-dropdown .selectBox-arrow {
+	position:relative;
+	position: absolute;
+	top: 12px;
+	right: 8px;
+	display:block;
+	width:0px;
+	height:0px;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	border-top:5px solid #999999;
+	z-index:10;
+}
+.filter_select .selectBox-dropdown .selectBox-arrow {
+	border:none;
+	height:10px;
+	width:8px;
+	background:url(../images/select-arrow.png) left top no-repeat;
+	top:10px;
+}
+/* Dropdown menu */
+.selectBox-dropdown-menu {
+	position: absolute;
+	z-index: 35;
+	max-height: 200px;
+	border: solid 1px #BBB; /* should be the same border width as .selectBox-dropdown */
+	background: #FFF;
+	overflow: auto;
+	
+}
+
+/* Inline control */
+.selectBox-inline {
+	width: 250px;
+	outline: none;
+	border: solid 1px #BBB;
+	background: #FFF;
+	display: inline-block;
+	overflow: auto;
+}
+.selectBox-inline:focus {
+	border-color: #666;
+}
+/* Options */
+.selectBox-options,
+.selectBox-options LI,
+.selectBox-options LI A {
+	list-style: none;
+	display: block;
+	cursor: default;
+	padding: 0;
+	margin: 0;
+	text-decoration:none;
+	z-index:150;
+	font: italic 14px/33px arial;
+}
+
+.selectBox-options LI A {
+	line-height: normal;
+	padding: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	background: 6px center no-repeat;
+	color:#999;
+}
+.selectBox-options LI A:hover{cursor:pointer;}
+.selectBox-options LI.selectBox-hover A {background-color: #eee; color:#666;}
+.selectBox-options LI.selectBox-disabled A {
+	color: #888;
+	background-color: transparent;
+}
+.selectBox-options LI.selectBox-selected A {
+	color:#555;
+}
+.selectBox-options .selectBox-optgroup {
+	color: #666;
+	background: #EEE;
+	font-weight: bold;
+	line-height: 1.5;
+	padding: 0 .3em;
+	white-space: nowrap;
+}
+/* Disabled state */
+.selectBox-dropdown.selectBox-disabled .selectBox-arrow {
+	border-color: #666;
+}

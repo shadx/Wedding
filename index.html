@@ -5,10 +5,16 @@
   <title></title>
   
   <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.bxSlider.min.js"></script>
+  <script type="text/javascript" src="js/selectbox.min.js"></script>
+  <script type="text/javascript" src="js/jquery.ui-slider.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
 	
   <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/bx_styles.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/selectbox.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/trackbar.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
 	<div id="wrapper">
@@ -72,9 +78,9 @@
 						</ul>
 					</div>
 					<div class="filter_right_col">
-					  <span>Подбор товара</span>
+					  <p><span>Подбор товара</span></p>
 						<form action="#">
-						  <div>
+						  <div class="filter_form">
 							  <select name="#">
 								  <option>Категория 1</option>
 									<option>Категория 2</option>
@@ -85,11 +91,16 @@
 									<option>Тип 2</option>
 									<option>Тип 3</option>
 								</select><br />
+                
 								<div class="cost">Цена: <br />
-								  от <input type="text" value="0" name="#" /> 
-								  до <input type="text" value="30 000" name="#" />
+								  от <input type="text" id="minCost" value="0" name="#" /> 
+								  до <input type="text" id="maxCost" value="30000" name="#" />
 								</div>
-								<div class="trackbar"></div>
+								
+                <div class="price_trackbar">
+                  <div id="slider_price"></div>
+                </div>
+                
 								<input class="but" type="submit" value="показать" name="#" />
 								<div class="indent">соответствует </div>
 								<div class="result">256<div class="count"></div></div>
@@ -98,12 +109,15 @@
 					</div>
 					<div class="filter_cont_col">
 					  <div class="slide">
-						  <a class="prev" href="#"></a>
-							<a class="next" href="#"></a>
-							<ul>
-								<li><a href="#"><img src="tmp/slider_img-1.jpg" alt="" title="" /></a></li>
+						  <ul id="small_slider">
+								<li><img src="tmp/slider_img-1.jpg" alt="" title="" /></li>
+                <li><img src="tmp/slider_img-2.jpg" alt="" title="" /></li>
+                <li><img src="tmp/slider_img-3.jpg" alt="" title="" /></li>
 							</ul>
-						</div>
+              
+              <a id="prev_foto" class="prev"></a>
+							<a id="next_foto" class="next"></a>
+            </div>            
 					</div>
 				</div>
 			</div>
