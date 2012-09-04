@@ -6,7 +6,6 @@
   
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
-	<script type="text/javascript" src="js/jquery.bxSlider.min.js"></script>
   
   <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
