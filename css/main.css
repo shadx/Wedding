@@ -134,7 +134,6 @@ A:hover {
 
 
 #header {
-  height: 173px;
   margin: 0 0 0 0;
   overflow: hidden;
 }
@@ -163,32 +162,55 @@ A:hover {
 
 #header .header_right {
   width: 785px;
-  height: 168px;
   margin-left: 411px;
   border: 3px solid white;
-  border-radius: 7px;
+  border-radius: 8px;
   background: #F6F2E6;
+  /* overflow: hidden; */
 }
-#header .header_right .top_slider_left {
+#header .header_right .top_small_slider {
+  position: relative;
   float: left;
-  width: 269px;
-  height: 168px;
+  width: 270px;
+  height: 167px;
   border-right: 3px solid white;
   background: white;
-  overflow: hidden;
 }
-#header .header_right .top_slider_left IMG {
+#top_slider {
+  width: 270px;
+  height: 167px;
+}
+#top_slider LI {
+  width: 270px;
+  height: 167px;
+  margin: 0;
+  padding: 0;
+}
+#top_slider IMG {
   float: left;
-  border-radius: 7px 0 0 7px;
+  border-radius: 5px 0 0 5px;
 }
 #header .header_right .top_slider_right {
-  height: 167px;
   border-radius: 0 7px 7px 0;
   background: url(../images/bg_head-slider.jpg) no-repeat right bottom #F6F2E6;
 }
-#header .header_right .top_slider_right .slider_caption {
+#header .header_right .tslider_caption {
+  width: 510px;
   height: 138px;
-  border-radius: 0 7px 0 0 ;
+  margin: 0 0 0 271px;
+  /* height: 138px;
+  border-radius: 0 7px 0 0 ; */
+}
+#header .header_right .tslider_caption {
+  text-align: center;
+  overflow: hidden;
+}
+#header .header_right .tslider_caption P {
+  margin: 27px 0 12px 0;
+  font: italic 25px arial;
+  color: #085296;
+  text-shadow: 0px 1px #fff;
+  text-align: center;
 }
 #header .header_right .top_slider_right .slider_navi {
   float: right:
@@ -275,9 +297,9 @@ A:hover {
 	height: 30px;
 	margin: 0 30px 0 10px;
 	padding: 0 0 0 10px;
-	
+  /* border: none; */
 	border-radius: 5px;
-	font: italic 15px arial;
+	font: italic 15px/30px arial;
 	color: #575757;
 	text-shadow: 0px 1px #fff;
 	outline: 0;

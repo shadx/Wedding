@@ -10,12 +10,6 @@ $(document).ready(function(){
   
   $(".filter_form SELECT").selectBox();
   
-  
-  
-  
-  
-  
-  
   jQuery("#slider_price").slider({
   	min: 0,
   	max: 150000,
@@ -31,23 +25,26 @@ $(document).ready(function(){
     }
   });
   
-  
-  
-  
-  
-  
   var slider = $('#small_slider').bxSlider({
     auto: true,
+    speed: 150,
     controls: false
   });
 
   $('#prev_foto').click(function(){
 	  slider.goToPreviousSlide();
-	  return false;
   });
 
   $('#next_foto').click(function(){
 	  slider.goToNextSlide();
-	  return false;
+  });
+  
+  
+  
+  $('#top_slider').bxSlider({
+    // mode: 'vertical',
+    speed: 0,
+    auto: true,
+    pager: true
   });
 });
