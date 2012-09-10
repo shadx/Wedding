@@ -8,7 +8,7 @@ $(document).ready(function(){
     }
   );
   
-  $(".filter_form SELECT").selectBox();
+  // $(".filter_form SELECT").selectBox();
   
   jQuery("#slider_price").slider({
   	min: 0,

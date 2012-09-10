@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title></title>
+  
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.bxSlider.min.js"></script>
+  <script type="text/javascript" src="js/selectbox.min.js"></script>
+  <script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
+	
+  <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/bx_styles.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/selectbox.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/trackbar.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+	<div id="wrapper">
+    <div id="top_block">
+      <div class="bask">
+        <div class="bask_left">
+          <div class="my_shopping">Моя корзина</div>
+          <div class="bask_img"><img src="images/bask.png" alt="#" /></div>
+          <a href="#">Оформить заказ</a>
+        </div>
+        <div class="bask_right">
+          <div class="field">5 товаров</div>
+          <div class="field">250 000 руб.</div>
+        </div>  
+      </div>
+      <div class="top_menu">
+        <div class="top_menu_leftbg">
+          <div class="top_menu_rightbg">
+            <ul>
+              <li class="first"><a href="#">О компании</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Статьи</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Размерный ряд</a></li>
+              <li class="last"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div> 
+      </div> 
+    </div>
+    
+    <div id="header">
+      <div class="header_left">
+        <a class="logo" href="#">Beauty - Салон свадебной и вечерней моды</a>
+        <div class="vk_nravitsya"><a href="#"><img src="tmp/vk-nravitsya.jpg" alt="#" /></a></div>
+      </div>
+      <div class="header_right">
+        <div class="top_slider">
+          <div class="top_small_slider">
+            <ul id="top_slider">
+              <li><a href="#"><img src="tmp/topslider_foto-1.jpg" alt="#" /></a></li>
+              <li><a href="#"><img src="tmp/topslider_foto-2.jpg" alt="#" /></a></li>
+              <li><a href="#"><img src="tmp/topslider_foto-3.jpg" alt="#" /></a></li>
+            </ul>
+          </div>
+          <div class="top_slider_right">
+            <div class="tslider_caption">
+              <p>Салон свадебной и вечерней моды</p>
+              <img src="tmp/caption_logo.png" alt="" />
+            </div>
+            <div class="slider_navi"><img src="images/top_slider-navi.jpg" alt="#" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="filter">
+			<div class="block_bg">
+			  <div class="baterfly">
+        
+					<div class="filter_left_col">
+            <p><span>Подбор товара</span></p>
+            <div class="cost"><span>Цена:</span>
+  					  от <input type="text" id="minCost" value="0" name="#" /> 
+  					  до <input type="text" id="maxCost" value="30000" name="#" />
+  					</div>
+            <div class="price_trackbar2">
+              <div id="slider_price"></div>
+            </div>
+					</div>
+          
+					<div class="filter_right_col">
+						<form action="#">
+						  <div class="filter_form">
+							  <select name="#">
+								  <option>Категория 1</option>
+									<option>Категория 2</option>
+									<option>Категория 3</option>
+								</select>
+								<select name="#">
+								  <option>Тип 1</option>
+									<option>Тип 2</option>
+									<option>Тип 3</option>
+								</select><br />
+								<input class="but" type="submit" value="показать" name="#" />
+								<div class="indent">соответствует </div>
+								<div class="result">256<div class="count"></div></div>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</div>
+    </div>
+    
+    
+    
+    <div id="katalog_block">
+      <div class="katalog">
+        <div class="katalog_head">Каталог товаров</div>
+        <!--<div class="katalog_menu">
+          <ul>
+            <li class="act"><a href="#">Пышное</a></li>
+            <li><a href="#">А-силуэт</a></li>
+            <li><a href="#">Ампир</a></li>
+            <li><a href="#">Прямое</a></li>
+            <li><a href="#">Короткое</a></li>
+            <li class="last"><a href="#">Русалка</a></li>
+          </ul>
+        </div>-->
+        <br />
+        <div class="sort_block">
+          <div class="sorting">Сортировка</div>
+          <ul>
+            <li class="act"><a href="#">По цене</a></li>
+            <li class="last"><a href="#">По названию</a></li>
+          </ul>
+        </div>
+        
+        <div class="tovar_block">
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item act">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div>
+                  <div class="novinki"></div> 
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img2_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div>
+                  <div class="skidki"></div> 
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div> 
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img2_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div> 
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div>
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img2_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div>
+                  <div class="skidki"></div> 
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div>
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img2_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div>
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div>
+                  <div class="novinki"></div> 
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img2_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div>
+                   
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div> 
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img2_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div>
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div>
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img2_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div> 
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div> 
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tovar_item_block">
+            <div class="head_item">Свадебное платье B123</div>
+            <div class="tovar_item">
+              <div class="tovar_item_inner">
+                <div class="tovar_item_img">
+                  <a href="#"><img src="tmp/img2_tovar-item.png" alt="#" /></a>
+                  <div class="novinki_cena">10 000 руб.</div> 
+                </div>
+                <div class="collection">Коллекция:<br /> Виктория Карандашева</div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        
+        <div class="polzunok"><img src="images/polzunok.png" alt="#" /></div>
+        
+      </div>
+    </div>
+    
+    <div id="actions">
+      <div class="actions_block">
+        <div class="actions_block_right">
+          <div class="actions_block_head">
+            Скидки
+            <a href="#">весь список</a>
+          </div>
+          <div class="brands_block">
+            <div class="brands_item">
+              <div class="skidki_cena">10 000 руб.</div>
+              <div class="skidki"></div>
+              <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div> 
+              <span>159 000</span>
+            </div>
+            <div class="brands_item last">
+              <div class="skidki_cena">10 000 руб.</div>
+              <div class="skidki"></div>
+              <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div> 
+              <span>159 000</span>
+            </div>
+          </div>  
+        </div>
+        <div class="actions_block_left">
+          <div class="actions_block_head">
+            Новинки
+            <a href="#">весь список</a>
+          </div>
+          <div class="brands_block">
+            <div class="brands_item brands_item_left">
+              <div class="novinki_cena">10 000 руб.</div>
+              <div class="novinki"></div>
+              <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div>
+            </div>
+            <div class="brands_item brands_item_left last">
+              <div class="novinki_cena">10 000 руб.</div>
+              <div class="novinki"></div>
+              <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="actions_block_center">
+          <div class="actions_block_head">
+            Акции
+            <a href="#">весь список</a>
+          </div>
+          <div class="brands_block">
+            <div class="brands_item brands_item_center">
+              <!--<div class="skidki_cena">10 000 руб.</div>
+              <div class="skidki"></div>-->
+              <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div> 
+              <a href="#">Платье King Koil Verso</a>
+            </div>
+            <div class="brands_item brands_item_center">
+              <!--<div class="skidki_cena">10 000 руб.</div>
+              <div class="skidki"></div>-->
+              <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div> 
+              <a href="#">Платье King Koil Verso</a>
+            </div>
+            <div class="brands_item brands_item_center last">
+              <!--<div class="skidki_cena">10 000 руб.</div>
+              <div class="skidki"></div>-->
+              <div class="brands_item_img"><a href="#"><img src="tmp/bg_brends_item.png" alt="#" /></a></div> 
+              <a href="#">Платье King Koil Verso</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div id="about_salon">
+      <div class="inner_about_salon">
+        <div class="about_salon_head">О салоне</div>
+        
+        <div class="about_salon_textblock">
+          <div class="about_salon_text">
+            Ищете салон, где можно получить скидки на свадебные или вечерние платья? Тогда Вам точно к нам! Очаровательный макияж, прическа, аккуратный маникюр – все это 
+            неотъемлемые атрибуты предсвадебной суеты. В салонах «Беллиссимо» для Вас раскроются секреты женской красоты. Посмотреть примеры работ наших 
+            профессиональных визажистов, парикмахеров, дизайнеров ногтей можно прямо сейчас на нашем сайте! Какая невеста, будучи еще совсем юной в детстве, не мечтала о 
+            великолепной свадьбе с роскошным платьем! Эта сказка сегодня легко станет реальностью с помощью наших салонов. Мы с радостью готовы помочь Вам не только с 
+            подбором свадебного наряда, но и с тем, как одеть его согласно всем правилам свадебного искусства.
+          </div>
+          <div class="about_salon_text last">
+            В салонах «BEAUTY» свадебные платья и аксессуары представлены в различных стилях и для всех возрастных категорий. 
+            Вот почему наряд каждой невесты, подобранный в нашем салоне, всегда гармонично выражает ее индивидуальность.
+          </div>
+        </div>
+        
+        <div class="about_salon_textblock">
+          <div class="about_salon_text">
+            Ищете салон, где можно получить скидки на свадебные или вечерние платья? Тогда Вам точно к нам! Очаровательный макияж, прическа, аккуратный маникюр – все это 
+            неотъемлемые атрибуты предсвадебной суеты. В салонах «Беллиссимо» для Вас раскроются секреты женской красоты. Посмотреть примеры работ наших 
+            профессиональных визажистов, парикмахеров, дизайнеров ногтей можно прямо сейчас на нашем сайте! Какая невеста, будучи еще совсем юной в детстве, не мечтала о 
+            великолепной свадьбе с роскошным платьем! Эта сказка сегодня легко станет реальностью с помощью наших салонов. Мы с радостью готовы помочь Вам не только с 
+            подбором свадебного наряда, но и с тем, как одеть его согласно всем правилам свадебного искусства.
+          </div>
+          <div class="about_salon_text last">
+            В салонах «BEAUTY» свадебные платья и аксессуары представлены в различных стилях и для всех возрастных категорий. 
+            Вот почему наряд каждой невесты, подобранный в нашем салоне, всегда гармонично выражает ее индивидуальность.
+          </div>
+        </div> 
+          
+          
+      </div>  
+    </div>
+    
+    <div id="footer">
+			<div class="footer_bg">
+			  <div class="footer_menu">
+				  <ul>
+					  <li>КАТАЛОГ ТОВАРОВ BEAUTY</li>
+						<li><a class="footer_link" href="#">Свадебные платья</a></li>
+						<li><a class="footer_link" href="#">Вечерние платья</a></li>
+						<li><a class="footer_link" href="#">Нижнее белье</a></li>
+						<li><a class="footer_link" href="#">Аксессуары</a></li>
+						<li><a class="footer_link" href="#">Новые поступления</a></li>
+						<li><a class="footer_link" href="#">Скидки и акции</a></li>
+					</ul>
+					<ul>
+					  <li>СЕРВИС И ПОМОЩЬ</li>
+						<li><a class="footer_link" href="#">Как сделать заказ</a></li>
+						<li><a class="footer_link" href="#">Пункт самовывоза</a></li>
+						<li><a class="footer_link" href="#">Способы оплаты</a></li>
+						<li><a class="footer_link" href="#">Возврат</a></li>
+						<li><a class="footer_link" href="#">Правила продажи</a></li>
+						<li><a class="footer_link" href="#">Публичная оферта</a></li>
+					</ul>
+					<ul>
+					  <li>О КОМПАНИИ</li>
+						<li><a class="footer_link" href="#">О нас</a></li>
+						<li><a class="footer_link" href="#">Статьи</a></li>
+						<li><a class="footer_link" href="#">Отзывы</a></li>
+						<li><a class="footer_link" href="#">Размерный ряд</a></li>
+						<li><a class="footer_link" href="#">Контакты</a></li>
+					</ul>
+					<ul>
+					  <li>СЛЕДУЙТЕ ЗА НАМИ</li>
+						<li><a class="footer_link" href="#">Форум</a></li>
+						<li><a class="footer_link" href="#">Вконтакте</a></li>
+					</ul>
+					<div class="ratings"><a href="#"><img src="tmp/ratings.jpg" alt="" title="" /></a></div>
+				  <a class="footer_logo" href="#">Beauty - салон свадебной и вечерней моды</a>
+				</div>
+				<div class="copyright">Copyright 2012 &copy; <a href="#">Beauty</a> - Салон свадебной и вечерней моды. Все права защищены. Свадебные платья,<br /> Вечерние платья, Фата, перчатки, нижнее бельё и т.д.<br /><br /> Доставка по всей России! Телефон:8 (8617) 769-68-86 (круглосуточно).</div>
+				<div class="cards">
+				  <img src="images/webmoney.png" alt="" title="" />
+					<img src="images/mastercard.png" alt="" title="" />
+					<img src="images/visa.png" alt="" title="" />
+				</div>
+			</div>
+    </div>
+  </div>
+</body>
+</html>
