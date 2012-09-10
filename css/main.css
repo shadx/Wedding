@@ -1,5 +1,7 @@
 BODY {
-  background: url(../images/main_bg.jpg) no-repeat 50% 0 #000101;
+  /* min-width: 1000px; */
+  /* background: url(../images/main_bg.jpg) no-repeat 50% 0 #000101; */
+  background: url(../images/back/main_bg-11.jpg);
 }
 
 .png {
@@ -15,8 +17,14 @@ A:hover {
   cursor: pointer;
 }
 
+#boby_bg {
+  background: url(../images/nevesta.png) no-repeat -210px 0;
+}
+
 #wrapper {
-  width: 1200px;
+  /* min-width: 1000px;
+  max-width: 1200px; */
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -27,27 +35,28 @@ A:hover {
   margin: 8px 0 0 0;
   padding-bottom: 17px;
   overflow: hidden;
-  background: url(../images/top_menu-shadow.png) no-repeat 0 63px;
+  /* background: url(../images/top_menu-shadow.png) no-repeat 0 63px; */
 }
 #top_block .top_menu {
-  width: 990px;
-  margin-top: 15px;
+  /* width: 990px; */
+  margin: 15px 214px 0 0;
   background: #F4F4F4;
   border-radius: 5px;
+  box-shadow: 10px 10px 30px #133B5E;
 }
 #top_block .top_menu .top_menu_leftbg {
-  width:  100%;
   height: 48px;
   background: url(../images/bg_top-menu_left.png) no-repeat left bottom;
 }
 #top_block .top_menu .top_menu_leftbg .top_menu_rightbg {
-  width:  100%;
   height: 48px;
   background: url(../images/bg_top-menu_right.png) no-repeat right bottom;
 }
 #top_block .top_menu .top_menu_leftbg .top_menu_rightbg UL {
   overflow: hidden;
-  margin-left: 70px;
+  width: 761px;
+  margin: 0 auto;
+  /* margin-left: 70px; */
 }
 #top_block .top_menu .top_menu_leftbg .top_menu_rightbg UL LI {
   float: left;
@@ -62,12 +71,12 @@ A:hover {
 }
 #top_block .top_menu .top_menu_leftbg .top_menu_rightbg UL LI A {
   display: block;
-  padding: 0 17px 0 17px;
+  padding: 0 12px 0 12px;
   font: italic 16px/48px "times new roman";
   color: #383737;
 }
 #top_block .top_menu .top_menu_leftbg .top_menu_rightbg UL LI.first {
-  padding-left: 17px;
+  padding-left: 23px;
   background: url(../images/bg_top-menu-first.png) no-repeat 6px 13px;
 }
 #top_block .top_menu .top_menu_leftbg .top_menu_rightbg UL LI.first:hover {
@@ -139,14 +148,15 @@ A:hover {
 }
 #header .header_left {
   float: left;
-  width: 408px;
-  height: 173px;
+  width: 330px;
+  overflow: hidden;
 }
 #header .header_left .logo {
   display: block;
-  width: 409px;
-  height: 109px;
-  background: url(../images/logo.png) no-repeat 55px 10px;
+  width: 272px;
+  height: 98px;
+  margin: 14px 0 0 30px;
+  background: url(../images/logo.png) no-repeat 0 0;
   text-indent: -9999px;
 }
 #header .header_left .vk_nravitsya {
@@ -161,12 +171,12 @@ A:hover {
 
 
 #header .header_right {
-  width: 785px;
-  margin-left: 411px;
+  /* width: 785px; */
+  /* margin-left: 35%; */
   border: 3px solid white;
   border-radius: 8px;
   background: #F6F2E6;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 #header .header_right .top_small_slider {
   position: relative;
@@ -195,7 +205,7 @@ A:hover {
   background: url(../images/bg_head-slider.jpg) no-repeat right bottom #F6F2E6;
 }
 #header .header_right .tslider_caption {
-  width: 510px;
+  /* width: 510px; */
   height: 138px;
   margin: 0 0 0 271px;
   /* height: 138px;
@@ -207,17 +217,19 @@ A:hover {
 }
 #header .header_right .tslider_caption P {
   margin: 27px 0 12px 0;
-  font: italic 25px arial;
+  font: italic 21px arial;
   color: #085296;
   text-shadow: 0px 1px #fff;
   text-align: center;
 }
 #header .header_right .top_slider_right .slider_navi {
-  float: right:
-  width: 512px;
-  height: 30px;
-  border-radius: 0 0 7px 0 ;
+  /* float: right: */
+  /* width: 512px; */
+  height: 29px;
+  border-radius: 0 0 7px 0;
   margin: 0 0 0 271px;
+  background: url(../images/top_slider-navi.jpg) no-repeat 100% 0;
+  overflow: hidden;
 }
 
 
@@ -227,6 +239,7 @@ A:hover {
 
 
 #filter_slider {
+  position: relative;
   margin: 13px 0 0 0;
 	padding: 15px;
   overflow: hidden;
@@ -239,7 +252,7 @@ A:hover {
   background: url(../images/filter_slider_articles_bg.png) repeat 0 0;
 }
 #filter_slider .block_bg .baterfly {
-  width: 1158px;
+  /* width: 1158px; */
 	height: 363px;
   background: url(../images/filter_slider_baterfly.png) no-repeat 100% bottom;
 }
@@ -274,7 +287,7 @@ A:hover {
 
 #filter_slider .block_bg .baterfly .filter_right_col {
   float: right;
-	width: 480px;
+	width: 450px;
 	height: 300px;
 	margin: 0px 0 0 0;
 }
@@ -359,7 +372,12 @@ A:hover {
 }
 
 #filter_slider .block_bg .baterfly .filter_cont_col {
-  margin: 0 568px 0 350px;
+  /* margin: 0 568px 0 350px; */
+  position: absolute;
+  z-index: 1;
+  top: 19px;
+  /* left: 370px; */
+  left: 260px;
 	height: 500px;
 }
 #filter_slider .block_bg .baterfly .filter_cont_col .slide { 
@@ -427,7 +445,7 @@ A:hover {
 }
 #actions .actions_block .actions_block_right {
   float: right;
-  width: 315px;
+  width: 290px;
   height: 245px;
   border-radius: 0 0 6px 0;  
 }
@@ -451,7 +469,7 @@ A:hover {
 #actions .actions_block .brands_block .brands_item {
   float: left;
   width: 100px;
-  margin-right: 68px;
+  margin-right: 48px;
   position: relative;
 }
 #actions .actions_block .brands_block .last {
@@ -517,22 +535,23 @@ A:hover {
 }
 #actions .actions_block .actions_block_left {
   float: left;
-  width: 324px;
+  width: 300px;
   height: 245px;
   padding-left: 11px;
   border-radius: 0 0 0 6px;  
 }
 #actions .actions_block .actions_block_left .brands_block .brands_item_left {
-  margin-right: 89px;  
+  margin-right: 49px;  
 }
 #actions .actions_block .actions_block_left .brands_block .last {
   margin-right: 0;  
 }
 #actions .actions_block .actions_block_center {
-  margin-left: 409px;   
+  margin: 0 auto;
+  width: 350px;   
 }
 #actions .actions_block .actions_block_center .brands_block .brands_item_center {
-  margin-right: 35px;
+  margin-right: 15px;
   font: 12px arial;
   color: #005EAC;   
 }
@@ -602,7 +621,7 @@ A:hover {
 #articles .inner_articles .inner_art_bg .articl {
   border: solid 1px #DADADA;
 	float: left;
-	width: 529px;	
+	width: 45%;	
 	border-radius: 7px;
 	background: #fff;
 	margin: 0 22px 15px 0;
@@ -666,6 +685,8 @@ A:hover {
 	float: right;
 }
 
+
+
 #footer {
   margin: 20px 0 0 0;
   overflow: hidden;
@@ -685,7 +706,7 @@ A:hover {
 }
 #footer .footer_bg .footer_menu UL {
   float: left;
-	margin: 0 100px 0 0;
+	margin: 0 70px 0 0;
 }
 #footer .footer_bg .footer_menu .footer_link {
   font: 12px verdana;
@@ -699,6 +720,7 @@ A:hover {
 	margin: 20px 0 0 0;
 	font: 12px verdana;
 	color: #000;
+  width: 650px;
 }
 #footer .footer_bg .copyright A {
   color: #000;

@@ -47,4 +47,19 @@ $(document).ready(function(){
     auto: true,
     pager: true
   });
+  
+  
+  
+  $width_win = $(document).width();
+	if($width_win <= 1100) {
+	  // $("#filter_slider .filter_cont_col").css("left", "260px");
+	}
+  
+  if($width_win <= 1400) {
+	  $("#boby_bg").css("background-position", "-350px 0");
+	}
+  
+  if($width_win <= 1300) {
+	  $("#boby_bg").css("background-position", "-400px 0");
+	}
 });
