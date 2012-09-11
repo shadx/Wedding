@@ -781,7 +781,7 @@ A:hover {
 #filter .block_bg .baterfly {
   width: 1158px;
 	height: 204px;
-  background: url(../images/filter_slider_articles_bg.png) no-repeat 100% bottom;
+  background: url(../images/filter_slider_baterfly1.png) no-repeat right bottom;
 }
 
 #filter .block_bg .baterfly .filter_left_col {
@@ -790,7 +790,6 @@ A:hover {
 	height: 194px;
 	padding: 10px 0 0 27px;
   border-radius: 5px 0 0 5px;
-  background: url(../images/filter_slider_baterfly1.png) no-repeat left bottom;
 }
 #filter .block_bg .baterfly .filter_left_col P {
   margin: 0;
@@ -859,7 +858,7 @@ A:hover {
 	height: 172px;
   padding: 32px 0 0 97px;
   border-radius:  0 5px 5px 0;
-  background: url(../images/filter_slider_baterfly2.png) no-repeat right bottom;
+  background: url(../images/filter_slider_baterfly_2.png) no-repeat 100% 0px;
 }
 #filter .block_bg .baterfly .filter_right_col SELECT {
   margin: 0 0 18px 0;
@@ -1180,7 +1179,7 @@ A:hover {
 	height: 194px;
   padding: 10px 0 0 97px;
   border-radius:  0 5px 5px 0;
-  background: url(../images/filter_slider_baterfly2.png) no-repeat 100% 5px;
+  background: url(../images/filter_slider_baterfly1.png) no-repeat 100% 0px;
 }
 #filter .block_bg .baterfly .filter_right_col2 .filter_right_head {
   margin: 0;
