@@ -8,7 +8,7 @@ $(document).ready(function(){
     }
   );
   
-  // $(".filter_form SELECT").selectBox();
+  $(".filter_form SELECT").selectBox();
   
   jQuery("#slider_price").slider({
   	min: 0,
@@ -24,6 +24,15 @@ $(document).ready(function(){
   		// jQuery("input#maxCost").val(jQuery("#slider_price").slider("values",1));
     }
   });
+  
+  
+  $("#filter_but").mouseup(function(){
+    $(this).css('background-position', '0 0');
+  }).mousedown(function(){
+    $(this).css('background-position', '-197px 0');
+  });
+  
+  
   
   var slider = $('#small_slider').bxSlider({
     auto: true,
@@ -51,15 +60,13 @@ $(document).ready(function(){
   
   
   $width_win = $(document).width();
-	if($width_win <= 1100) {
-	  // $("#filter_slider .filter_cont_col").css("left", "260px");
-	}
-  
+	
   if($width_win <= 1400) {
-	  $("#boby_bg").css("background-position", "-350px 0");
-	}
-  
-  if($width_win <= 1300) {
-	  $("#boby_bg").css("background-position", "-400px 0");
+	  $("#boby_bg").css("background-position", "-310px 0");
+	} else if($width_win <= 1300) {
+	  $("#boby_bg").css("background-position", "-360px 0");
+	} else if($width_win <= 1000) {
+	  // $("#filter_slider .filter_cont_col").css("left", "260px");
+    $("#boby_bg").css("background-position", "-420px 0");
 	}
 });
