@@ -10,12 +10,14 @@
   <script type="text/javascript" src="js/jquery.ui-slider.js"></script>
   <script type="text/javascript" src="js/niceCheckbox.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript" src="js/paginator.js"></script>
 	
   <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/bx_styles.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/selectbox.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/trackbar.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="css/paginator.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
   <div id="boby_bg">
@@ -367,8 +369,14 @@
             </div>  
           </div>
           
-          <div class="polzunok"><img src="images/polzunok.png" alt="#" /></div>
-          
+          <div class="stranica">Страницы:</div>
+					<div align="center" class="nav">
+						<div class="paginator" id="paginator1"></div>
+						<script type="text/javascript">
+							pag = new Paginator('paginator1', 50, 10, 1, "/news/page-*.html");
+						</script>
+		      </div>
+         
         </div>
       </div>
       

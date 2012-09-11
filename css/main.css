@@ -1267,7 +1267,11 @@ A:hover {
 	background: url(../images/filter_slider_count.png) no-repeat 0 0;
 }
 
-
+#katalog_block .katalog .stranica {
+  font:  italic 16px arial;
+	color: #0F1D44;
+	margin: 0 0 0 185px;
+}
 /* /katalog */
 
 
