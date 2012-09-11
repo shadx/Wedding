@@ -166,7 +166,7 @@ A:hover {
   border-radius: 4px;
   background: white;
   padding-left: 3px;
-  margin: 33px 0 0 15px;
+  margin: 33px 0 0 110px;
 }
 
 
@@ -948,12 +948,24 @@ A:hover {
   font: italic 12px/33px arial;
   color: #0F1D44;
 }
+#katalog_block .katalog .katalog_menu LI:hover {
+  float: left;
+  /*border-right: 1px solid #F9F9F9;
+  border-bottom: 1px solid #F9F9F9;*/
+  background: url(../images/ico_katalog-menu_item_act.png) no-repeat 9px 10px #094E8A;;
+  font: italic 12px arial;
+}
 #katalog_block .katalog .katalog_menu .act {
   float: left;
   /*border-right: 1px solid #F9F9F9;
   border-bottom: 1px solid #F9F9F9;*/
   background: url(../images/ico_katalog-menu_item_act.png) no-repeat 9px 10px #094E8A;;
   font: italic 12px arial;
+}
+#katalog_block .katalog .katalog_menu .act A {
+  color: white;
+  text-decoration: none;
+  text-decoration: underline;
 }
 #katalog_block .katalog .katalog_menu .last {
   margin-right: 0;
@@ -963,14 +975,12 @@ A:hover {
   color: #0F1D44;
   text-decoration: underline;
 }
-#katalog_block .katalog .katalog_menu .act A {
+#katalog_block .katalog .katalog_menu LI:hover A {
   color: white;
-  text-decoration: none;
-}
-#katalog_block .katalog .katalog_menu .act A:hover {
   text-decoration: underline;
 }
-#katalog_block .katalog .katalog_menu LI A:hover {
+#katalog_block .katalog .katalog_menu LI:hover A:hover {
+  color: white;
   text-decoration: none;
 }
 #katalog_block .katalog .sort_block {
@@ -992,11 +1002,15 @@ A:hover {
   margin-right: 58px;
   background: url(../images/bg_sort.png) no-repeat 0 0;
 }
+#katalog_block .katalog .sort_block LI:hover {
+  float: left;
+  padding: 0 20px 0 20px;
+  background: #094E8A; 
+}
 #katalog_block .katalog .sort_block .act {
   float: left;
   padding: 0 20px 0 20px;
-  background: #094E8A;;
-  
+  background: #094E8A;; 
 }
 #katalog_block .katalog .sort_block LI A {
   padding: 0 8px 0 8px;
@@ -1007,15 +1021,20 @@ A:hover {
 #katalog_block .katalog .sort_block LI A:hover {
   text-decoration: none;
 }
+#katalog_block .katalog .sort_block LI:hover A {
+  color: white;
+}
 #katalog_block .katalog .sort_block .act A {
   color: white;
-  text-decoration: none;
 }
 #katalog_block .katalog .sort_block .act A:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 #katalog_block .katalog .sort_block .last {
   margin-right: 0;
+}
+#katalog_block .katalog .sort_block .last:hover {
+  margin-left: -20px;
 }
 #katalog_block .katalog .tovar_block {
   overflow: hidden;
@@ -1170,31 +1189,39 @@ A:hover {
 	text-shadow: 0px 1px #fff;
 }
 #filter .block_bg .baterfly .filter_right_col2 .check_area {
-  margin: 12px 0 18px 0;
-  overflow: hidden; 
+  margin: 12px 0 0 0;
+  overflow: hidden;
+  background: black; 
 }
 #filter .block_bg .baterfly .filter_right_col2 .check_area .left {
   float: left;
   width: 186px;
+  overflow: hidden;
+  background: red;
 }
 #filter .block_bg .baterfly .filter_right_col2 .check_area .right {
   margin-left: 186px;
+  background: red;
+  overflow: hidden;
 }
 #filter .block_bg .baterfly .filter_right_col2 .check_area .check_area_item {
   float: left;
-  margin-bottom: 5px;
+  overflow: hidden;
+  background: green;
 }
 #filter .block_bg .baterfly .filter_right_col2 .check_area .last {
-  margin-bottom: 0;
+  margin: 0 0 5px 0;
 }
-#filter .block_bg .baterfly .filter_right_col2 .check_area .check_area_item IMG {
+#filter .block_bg .baterfly .filter_right_col2 .check_area .check_area_item .chack {
   float: left;
 }
-#filter .block_bg .baterfly .filter_right_col2 .check_area .check_area_item SPAN {
-  /* display: inline-block;
-  margin: 5px 0 0 14px; */
-  font: italic 16px "times nev roman";
+#filter .block_bg .baterfly .filter_right_col2 .check_area .check_area_item .zag {
+  float: left;
+  display: inline-block;
+  margin-top: 8px;
+  font: italic 16px/16px "times nev roman";
   color: #0F1D44;
+  background: yellow;
 }
 #filter .block_bg .baterfly .filter_right_col2 .but {
   float: left;
@@ -1257,7 +1284,7 @@ A:hover {
   overflow: hidden;
   display: inline-block;
   cursor: pointer;
-  background: url(../images/check-bg.png) left top no-repeat;
+  background: url(../images/check-bg.png) left top no-repeat; 
 }
 .niceChecked {
   background-position: left bottom;
